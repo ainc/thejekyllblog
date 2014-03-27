@@ -1,0 +1,36 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>A Jekyll Blog About Jekyll</h1>
+  <p>We like Jekyll and you can, too! This site was created to serve as a resource for anyone who wants to learn Jekyll. There are lots of great ways to create blogs and websites, and Jekyll is one of them. We're big fans of Jekyll because it is:</p>
+  <ul>
+  	<li>Simple</li>
+  	<li>Blog-aware</li>
+  	<li>Static</li>
+  </ul>
+  <p>We like using Jekyll because, in 90% of cases, it's a better solution than a CMS (content management system). With Jekyll, you don't have to deal with PHP, databases, and most of the security, scalability, and maintenance challenges associated with them. However, Jekyll can be challenging for new users who aren't comfortable with the command line, Markdown, YAML, version control systems like Git, and the Liquid templating language. The articles on this site are intended to help more people overcome those initial challenges so they can share in the joyous experience that is Jekyll.</p>
+  <p>If you're new here, we recommend you start with the article <a href="#">Your First 15 Minutes With Jekyll</a>.</p>
+  <h2>Recent Posts</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <h2>Templates</h2>
+  <ul class="posts">
+    {% for post in site.categories.templates %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% for category in site.categories %}
+  <h2>{{ category[0] }}</h2>
+  <ul class="posts">
+    {% for post in category[1] %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
