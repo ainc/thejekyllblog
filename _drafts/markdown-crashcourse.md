@@ -7,7 +7,7 @@ categories: markdown
 
 If you're reading this post, you may have heard of 'HTML'. If you're familiar with what those 4 letters mean, then you'll know that HTML is a Markup Language. There are other markup languages, including LaTeX, ... (other markup languages). Then there's this thing called Markdown. It's kind of the opposite of a Markup Language. When you write a document using Markdown formatting, it can be parsed by a Markdown Processor, and turned into an HTML document.
 
-Quick recap:
+## Quick Overview
 
 Markdown --> HTML --> Looks nice in your Browser
 
@@ -25,19 +25,27 @@ Check out the [Markdown description][markdown-fireball] for more info on what Ma
 
 Enough talk, let's do some things with Markdown! I like the [80/20 principle][pareto], so here's the 80%:
 
-Paragraphs: just start writing
-Lists: 
-Headings: 
-Emphasis:
-Links:  
-Images: 
+- Paragraphs: just start writing
+- Lists: 
+- Headings: 
+- Emphasis:
+- Links:  
+- Images: 
 
 And here's the 20% (ie MOST people will never use these):
-Syntax highlighting: backticks (by the '~' key, use your left pinky finger) are your friend
+
+- Syntax highlighting: backticks ` (by the '~' key, use your left pinky finger) are your friend
 
 
-[pareto]: pareto-on-wikipedia
+## Other useful Markdown resources
+
+- [Markdown Cheatsheet][markdown-cheatsheet]
+
+
+
+[pareto]: http://en.wikipedia.org/wiki/Pareto_principle
 [html-spec]: w3c-html-spec
 [power-spec]: edison-110V-grounded-outlet
-[markdown-fireball]: https://github.com/mojombo/jekyll
-[markdown-github]:    http://jekyllrb.com
+[markdown-fireball]: http://daringfireball.net/projects/markdown/
+[markdown-github]: https://help.github.com/articles/github-flavored-markdown
+[markdown-cheatsheet]: http://markdown.chibi.io/
