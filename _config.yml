@@ -2,6 +2,7 @@ name: The Jekyll Blog
 markdown: redcarpet
 pygments: true
 permalink: /:title/
+relative_permalinks: false
 gems:
   - jekyll-redirect-from
 show_drafts: true
